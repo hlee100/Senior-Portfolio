@@ -11,6 +11,12 @@ document.addEventListener("DOMContentLoaded", () => {
             setTimeout(() => {
                 typeWriterText.style.opacity = 0;
                 typeWriterText.style.transition = 'opacity 2s ease';
+
+                setTimeout(() => {
+                    typeWriterText.style.visibility = 'hidden';
+                    typeWriterText.style.display = 'none';
+                }, 2000);
+                
                 blurBackground.classList.remove('blur-background');
                 blurBackground.style.transition = 'filter 0.5s ease';
             }, 500);
